@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ryan O'Bannon &mdash; Environmental Chamber</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mechanical Engineering Project Portfilio" />
+	<meta name="keywords" content="Ryan O'Bannon, project, portfolio, mechanical, engineering, Environmental, chamber, automation, Arduino" />
+	<meta name="Ryan O'Bannon" content="Ryan O'Bannon" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="fh5co-top-logo">
+				<div id="fh5co-logo"><a href="index.html">Ryan O'Bannon</a></div>
+			</div>
+			<div class="fh5co-top-menu menu-1 text-center">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown">
+						<a href="http://www.ryanobannon.github.io/index.html#Projects">Projects</a>
+						<ul class="dropdown">
+							<li><a href="builttotilt.html">Built To Tilt</a></li>
+							<li><a href="pizzabot.html">PizzaBot</a></li>
+							<li><a href="neopixelbox.html">Neopixel Boom Box</a></li>
+							<li><a href="environmentalchamber.html">Environmental Chamber Automation</a></li>
+							<li><a href="maglev.html">Magnetic Levitation Control</a></li>
+							<li><a href="slidercrank.html">Slider Crank</a></li>
+							<li><a href="turbine.html">3D Printed Wind Turbine</a></li>
+							<li><a href="waterfall.html">Waterfall</a></li>
+							<li><a href="racecar.html">3 Wheel Electric Racecar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="fh5co-author">
+		<div class="container">
+			<div class="row top-line animate-box">
+				<div class="col-md-12 col-md-offset-0 col-md-push-0 text-center fh5co-heading">
+					<h1>Environmental Chamber Automation</h1>
+					<p>July 2016</p>
+				</div>
+				<div class="col-md-10 col-md-offset-1 col-md-push-0 text-left">
+					<h4>Project Overview</h4>
+					<p>Below are a few pictures of the system I designed at Chemisense to automate temperature and humidity control within a benchtop environmental chamber. The chamber has built in heating coils; I added cooling capability with an external pump that flows chilled fluid through heat exchanging coils inside the chamber. Humidity is controlled by regulating the flow of dry or humidified air into the chamber.  </p>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 text-left animate-box">
+					<a class="work">
+						<div class="work-grid" style="background-image:url(images/Chamber.jpg);">
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-md-offset-2 text-left animate-box">
+					<a class="work">
+						<div class="work-grid" style="background-image:url(images/ChamberKnob.jpg);">
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-md-offset-1 text-left animate-box">
+					<a class="work">
+						<div class="work-grid" style="background-image:url(images/ChamberSwitch.jpg);">
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-md-offset-2 text-left animate-box">
+					<a class="work">
+						<div class="work-grid" style="background-image:url(images/ChamberPanel.jpg);">
+							
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row top-line animate-box">
+				<div class="col-md-10 col-md-offset-1 col-md-push-0 text-left">
+					<p>The system is controlled with Arduino code I wrote that reads data from a temperature and humidity sensor inside the chamber and sends commands to the cooling pump and three servos to regulate all aspects of the system. I designed and 3D printed assemblies to attach servo motors to the face of a flow controller to actuate switches controlling dry and humidified air valves. I designed another assembly to mount a servo onto the chamber itself and turn the knob regulating the heating coils. The code allows the user to input desired temperature/humidity combinations and automatically cycles through and holds chamber conditions at all these points with a simple control scheme. It collects and outputs real-time temperature and humidity readings to compare to the desired values.  </p>
+					<p>Before I automated the system, the 8 hour long procedure used to calibrate Chemisense's devices to different environmental conditions required regular manual adjustments of the lab equipment. This system was able to successfully run overnight without supervision, saving significant amounts of time and increasing calibration throughput.  </p>
+					<p>Though not as polished or professional as all-in-one solutions available to buy, my automation solution is far, far cheaper and well-suited to the needs of a startup. It integrates well into existing lab equipment with little modification, and leaves the equipment manually operable for other tests. The 3D printed parts can be easily reprinted and adapted to other equipment, and the most expensive components are small servos. Most importantly, it was fast to implement and proved as functional as a human running this test. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
