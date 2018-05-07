@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #cabcab;
+  background: rgba(130, 130, 130, 1);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #cabcab;
+  background: rgba(130, 130, 130, 1);
 }
 
 ::selection {
   color: #fff;
-  background: #cabcab;
+  background: rgba(130, 130, 130, 1);
 }
 
 .fh5co-nav {
@@ -676,20 +676,24 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 40%;
   height: 350px;
   float: left;
+  display:block;
 }
 @media screen and (max-width: 480px) {
   .author .author-inner {
     width: 100%;
     margin-bottom: 40px;
+    display:block;
   }
 }
 .author .desc {
   width: 60%;
   float: left;
   padding-left: 50px;
+  display:block;
 }
 @media screen and (max-width: 480px) {
   .author .desc {
+    display:block;
     width: 100%;
     padding-left: 0;
   }
@@ -1298,6 +1302,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .js .animate-box {
   opacity: 0;
+  display:block;
 }
 
 .testimony {
